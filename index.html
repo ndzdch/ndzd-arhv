@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f4f3ef">
+  <title>ндзд архв</title>
+  <link rel="stylesheet" href="./src/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">К содержимому</a>
+  <div id="app"></div>
+  <div id="startup-splash" class="startup-splash" role="status" aria-label="Открываем архив">
+    <img class="startup-photo" src="./prototype-assets/splash/forest.png" alt="" fetchpriority="high">
+    <div class="startup-frame" aria-hidden="true">
+      <i class="startup-rule horizontal upper"></i><i class="startup-rule horizontal lower"></i>
+      <i class="startup-rule vertical first"></i><i class="startup-rule vertical second"></i>
+      <i class="startup-corner tl"></i><i class="startup-corner tr"></i><i class="startup-corner bl"></i><i class="startup-corner br"></i>
+      <i class="startup-edge left"></i><i class="startup-edge right"></i>
+      <span class="startup-word ndzd">ндзд</span><span class="startup-word arhv">архв</span>
+    </div>
+  </div>
+  <input id="folder-picker" type="file" webkitdirectory multiple hidden aria-label="Папка со сканами">
+  <input id="photos-picker" type="file" accept="image/jpeg,.jpg,.jpeg" multiple hidden aria-label="Фотографии">
+  <script type="module" src="./src/app.js"></script>
+</body>
+</html>

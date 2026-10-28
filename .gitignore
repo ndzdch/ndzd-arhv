@@ -1,0 +1,13 @@
+node_modules/
+.build-cache/
+release/
+.DS_Store
+browser-demo/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+.ndzd/
